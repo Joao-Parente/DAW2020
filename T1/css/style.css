@@ -1,0 +1,42 @@
+
+h1{
+    text-align: center;
+    font-size: 3vw;
+    border: 1px solid black;
+}
+#img1{
+    
+    display: block;
+   
+    height: 100%; width: 100%; 
+    margin-bottom:10%;
+    
+}
+dl{
+    margin:10%;
+}
+dd{
+    margin-bottom:5%;
+}
+#intro{
+    font-size: 1.5vw;
+}
+
+p{
+    border: 1px solid black;
+    
+}
+div{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border: 1px solid black;height: 60%;
+    width: 40%;
+    
+    font-size: 1vw;
+}
+#voltar{
+
+    border: 1px solid black;
+}
