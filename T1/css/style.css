@@ -1,42 +1,109 @@
+html,body{
 
-h1{
+
     text-align: center;
-    font-size: 3vw;
-    border: 1px solid black;
-}
-#img1{
-    
-    display: block;
    
-    height: 100%; width: 100%; 
-    margin-bottom:10%;
-    
-}
-dl{
-    margin:10%;
-}
-dd{
-    margin-bottom:5%;
-}
-#intro{
-    font-size: 1.5vw;
+
 }
 
-p{
-    border: 1px solid black;
+
+h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 100px;
+}
+
+
+dt {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 80%;
+}
+
+dd,li,p{
+    font-family: 'Poiret One', cursive;
+    font-size:80%;
+    margin-bottom: 5%;
+}
+
+#primeira_pagina {
+
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
     
 }
-div{
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-    border: 1px solid black;height: 60%;
-    width: 40%;
+#img1 {
+    border: 7px solid black;
+    padding: 12px;
+    border-radius: 50%;
+    position: relative;
+    top: 25%;
+    width: 20%;
+    height: 30%;
+}
+
+
+#botao {
+    position: absolute;
+    border: 0px;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+}
+
+
+
+/*********************************************************/
+#resto {
+   
+ 
+    background-color: aquamarine;
+    border:2 solid ;
+    position: relative;
+}
+
+#seccao {
+    background-color: white;
+    width: 90%;
+    height: 100%;
+  
+  
+ 
+}
+
+#atalhos {
+    background-color: aquamarine;
     
-    font-size: 1vw;
-}
-#voltar{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 10%;
+    height: 100%;
 
-    border: 1px solid black;
+    padding-bottom: 10px;
 }
+.atalho{
+    display: block;
+    top:0;
+    position: sticky;
+    margin-bottom: 10px;
+    
+
+}
+
+
+.artigo {
+    background-color: aquamarine;
+    margin: 100px;
+    margin-bottom: 20%;
+   
+
+    font-size: 30px;
+}
+
+.texto_artigo {
+    font-size: 90%;
+
+}
+
+
