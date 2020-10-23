@@ -1,0 +1,25 @@
+projectreport{
+    display: block;margin:4px;
+}
+
+
+metadata,workteam,abstract,deliverables{
+    display: block;
+    margin:50px;
+    background-color:grey;
+}
+
+
+
+paragraph{
+    display: block;
+    margin:10px;
+}
+
+italic{
+    font-size:italic;
+}
+
+bold{
+    font-size: bold;
+}

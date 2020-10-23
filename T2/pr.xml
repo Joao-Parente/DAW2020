@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="pr.css"?>
+<!DOCTYPE projectreport SYSTEM "pr.dtd">
+
+<projectreport>
+    
+    
+    <metadata>
+        <keyname>DAW::T2</keyname>
+        <title> Relatório sobre o T2</title>
+        <begindate>21/10/2020</begindate>
+        <enddate>28/10/2020</enddate>
+        <supervisor>
+            <link path="mailto:jcr@di.uminho.pt">José Carlos Ramalho</link>
+        </supervisor>
+    </metadata>
+    
+    
+    
+    <workteam>
+        <name>Joao Pedro Araújo Parente</name>
+        <number>a84917</number>
+        <email>a84917@alunos.uminho.pt</email>
+    </workteam>
+    
+    
+    <abstract>
+        <paragraph> O trabalho de caso desta semana foi criar um <bold>dtd</bold> que caracterizasse um relatório para os trabalhos de casa da cadeira. </paragraph>
+        <paragraph> Cada relatorio tem 4 elementos fundamentais <italic>metadata workteam abstract deliverables</italic></paragraph>
+        <paragraph>
+            A <underlined>metadata</underlined> tem os elementos <italic>keyname,title,subtitle,begindate,enddate todos representados</italic> por #PCDATA  e o elemento 
+            <italic>supervisor</italic> que é constituído por um link, um link é um elemento que contém #PCDATA e que tem um atributo obrigatório denominado de path
+            onde se encontra como diz o próprio atributo o path da ligação do link.
+        </paragraph>
+        <paragraph>
+            A <underlined>workteam</underlined> tem os elementos <italic>name,number,email,weblink</italic> onde todos os elementos são #PCDATA exceto o <italic>weblink</italic>
+            que é um link.
+        </paragraph>
+        
+        <paragraph>
+            O <underlined>abstract</underlined> é uma lista de parágrafos, sendo que cada parágrafo pode ser <italic>#PCDATA, italic,bold, underlined  </italic>  zero ou mais vezes,
+            uma primeira abordagem era obrigar um parágrafo obrigado a ter uma lista de 1 ou mais vezes, o único problema  é que num dtd um elemento não pode ser descrito por <italic>(#PCDATA | outroElem)</italic>
+            e isto ser 1 ou mais vezes, a solução seria criar um elemento que contive-se apenas #PCDATA mas isto traria outro problema que era sempre que o objetivo fosse escrever texto dentro de um parágrafo 
+            sem qualquer formatação de texto teria-se de abrir esse novo elemento.
+   
+        </paragraph>
+        <paragraph>
+            O <underlined>deliverables</underlined> é uma lista dos ficheiros que foram produto do trabalho de casa, logo é uma lista de links.  
+        </paragraph>
+        
+    </abstract>
+    
+    
+    <deliverables>
+        <link path="pr.xml">pr.xml</link>
+        <link path="pr.dtd">pr.dtd</link>
+        
+    </deliverables>
+</projectreport>

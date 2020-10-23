@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT projectreport (metadata,workteam,abstract,deliverables) >
+
+
+<!ELEMENT metadata (keyname,title,subtitle?,begindate,enddate,supervisor) >
+
+
+<!ELEMENT workteam (name,number,email,weblink?) >
+
+<!ELEMENT abstract (paragraph+) >
+
+<!ELEMENT deliverables (link*) >
+
+
+
+
+
+
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link 
+            path CDATA #REQUIRED >
+            
+
+
+<!-- metadata -->
+<!ELEMENT keyname (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT begindate (#PCDATA)>
+<!ELEMENT enddate (#PCDATA)>
+
+<!ELEMENT supervisor (link)>
+
+
+<!-- workteam -->
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT weblink (link)>
+
+
+<!-- asbtract -->
+
+<!ELEMENT paragraph (   #PCDATA  | italic | bold | underlined   )*>
+
+<!ELEMENT italic (#PCDATA)>
+<!ELEMENT bold (#PCDATA)>
+<!ELEMENT underlined (#PCDATA)>
+
