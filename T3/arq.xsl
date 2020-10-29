@@ -39,12 +39,14 @@
             
             <html>
                 <head>
-                    <title> <xsl:value-of select="IDENTI"/></title>
+                    <title> <xsl:value-of select="TIPO"/></title>
                 </head>
                 <body>
                     
                     
                     <p><b>IDENTI </b>    <xsl:apply-templates  select="IDENTI"/></p>
+                    <p><b>IMAGEM </b>    <xsl:apply-templates  select="IMAGEM"/></p>
+                    
                     <p><b>DESCRI </b>    <xsl:apply-templates  select="DESCRI"/></p>
                     <p><b>CRONO </b>    <xsl:apply-templates  select="CRONO"/></p>      
                     <p><b>LUGAR </b>    <xsl:apply-templates  select="LUGAR"/></p>
@@ -56,12 +58,22 @@
                     <p><b>LONGIT </b>    <xsl:apply-templates  select="LONGIT"/></p>
                     
                     <p><b>ALTITU </b>   <xsl:apply-templates  select="ALTITU"/></p>
-                    <p><b>ACESSO </b>    <xsl:apply-templates select="ACESSO"/></p>      
+                    <p><b>ACESSO </b>    <xsl:apply-templates select="ACESSO"/></p>  
+                    <p><b>QUADRO </b>    <xsl:apply-templates  select="QUADRO"/></p>
+                    
+                    
+                    <p><b>TRAARQ </b>    <xsl:apply-templates  select="TRAARQ"/></p>
+                    
                     <p><b>DESARQ </b>    <xsl:apply-templates  select="DESARQ"/></p>
                     
-                    <p><b>INTERE </b>    <xsl:apply-templates select="INTERP"/></p>
+                    <p><b>INTERP </b>    <xsl:apply-templates select="INTERP"/></p>
+                    
+                    <p><b>DEPOSI </b>    <xsl:apply-templates select="DEPOSI"/></p>
+                    <p><b>INTERE </b>    <xsl:apply-templates select="INTERE"/></p>
+                    
                     <p><b>BIBLIO </b>   <xsl:apply-templates  select="BIBLIO"/></p>      
                     <p><b>AUTOR </b>    <xsl:apply-templates  select="AUTOR"/></p>
+                   
                     <p><b>DATA </b>   <xsl:apply-templates select="DATA"/></p>
                     
                     <address> 
