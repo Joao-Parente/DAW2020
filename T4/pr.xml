@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW::T4</key>
+        <title>Relatório sobre o T4</title>
+        <bdate>4/11/2020</bdate>
+        <edate>11/11/2020</edate>
+        <supervisor>jcr</supervisor>
+    </meta>
+    <team>
+        <member id="a84197">
+            <name>Joao Pedro Araújo Parente</name>
+            <email>a84917@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O objetivo deste trabalho de casa era gerar um website apartir do ficheiro arq.xml, onde cada arqueossítio ficaria numa página e haveria uma página inicial index.html onde teria o índice, além disso criar um servidor nodejs que aceite pedidos 
+        destas mesmas páginas e as forneça.</p>
+        <p>
+            Para criar o website fez-se uma  primeira travessia pela árvore do xml  ordenada pelo titulo de todos os elementos ARQELEM onde se criou o index.html, criou-se uma lista e para cada ARQELEM colocou-se o seu título como um item da lista, de seguida 
+        fez-se outra travessia por todos os elementos ARQELEM para criar uma página para esse ARQELEM </p>
+        
+        <p> Quanto ao nodejs reaproveitando o código realizado na aula apenas atualizei o código para o caso em questão.</p>
+        <p> Par</p>
+    </abstract>
+    <deliverables>
+        <link url="arq_t4.xml">arq_t4.xml</link>
+        <link url="pr.dtd">pr.dtd</link>
+        <link url="*.html">*.html</link>
+        <link url="server.js">server.js</link>
+        <link url="mod.js">mod.js</link>
+    </deliverables>
+</pr>
