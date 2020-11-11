@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW::T5</key>
+        <title>Relatório sobre o T5</title> 
+        <bdate>11/11/2020</bdate>
+        <edate>18/11/2020</edate>
+        <supervisor>jcr</supervisor>
+    </meta>
+    <team>
+        <member id="a84197">
+            <name>Joao Pedro Araújo Parente</name>
+            <email>a84917@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O objetivo deste tpc era ter um servidor json-server a atuar sobre a base de dados db.json a funcionar na porta 3001 e termos um servidor nodeJs na porta 4000 criado na aula e posteriormente desenvolvido que a pedidos GET's dê 
+            parse ao url, veja o que esse GET está a pedir, e faça  um GET ao servidor json-server onde estão todos os dados.</p><p> O servidor nodeJS  
+            ao receber a resposta do json-server constrói um html que devolve como resposta ao cliente que lhe fez o pedido inicial.
+       
+        </p>
+        <p> Quando fizermos um pedido ao https://localhost:4000 o nodeJs deverá devolver uma html com uma lista de 3 items, onde o primeiro é um link para uma página de alunos,o segundo
+        uma página de cursos e o último uma página de instrumentos. Cada página que é acedida por esses links deve ter por sua vez outra lista, onde estão listados todos os elementos dessa
+        categoria e se carregarmos em cada um deles deveremos aceder a informações do mesmo.</p>
+        
+        
+    </abstract>
+    <deliverables>
+        
+        <link url="servidor_tp5">servidor_tp5</link>
+        <link url="db.json">db.json</link>
+        <link url="Makefile">Makefile</link>
+        <link url="mymod.js">mymod.js</link>
+        <link url="pr.dtd">pr.dtd</link>
+
+    </deliverables>
+</pr>
