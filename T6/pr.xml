@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW::T6</key>
+        <title>Relatório sobre o T6</title> 
+        <bdate>18/11/2020</bdate>
+        <edate>25/11/2020</edate>
+        <supervisor>jcr</supervisor>
+    </meta>
+    <team>
+        <member id="a84197">
+            <name>Joao Pedro Araújo Parente</name>
+            <email>a84917@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O objetivo deste tpc era ter um website de gestão de tarefas, onde o cliente faz pedidos a um servidor nodejs que apenas recebe pedidos GET's e POST's</p>,
+       <p> o cliente poderá inserir tarefas para fazer para tal faz um pedido POST através do preenchimento de um form disponiblizado preeviamente pelo servidor ao cliente
+        o servidor ao receber este pedido '/form' faz um pedido post ao server-json que está encarregue da db.json onde tem as tarefas a realizar e feitas e coloca lá a nova tarefa</p>
+
+
+        <p>O cliente ainda pode alterar o estado de uma tarefa de por fazer para feita, o que implica enviar ao servidor um pedido GET com a sintaxe '/:id_do_registo/do' e o servidor vai buscar
+        ao server-json dentro das tarefas por fazer esse registo adiciona um paramentro feito em que é o momento em que foi feita a tarefa, remove das tarefas por fazer e adiciona as tarefas feitas</p>
+        </p>
+        
+        <p>Por ultimo o cliente ainda pode remover tarefas já feitas, o que implica enviar um pedido GET com a sintaxe '/:id_do_registo/delete' onde o servidor simplesmente diz ao server-json para remover 
+        o registo do dado id
+        </p>
+
+        <p> Notas: decidi usar como id o dia e a hora atual até ao segundo (ex: "2020-11-20T11:53:54"), se estiver a pedir para adicionar tarefas num intervalo mais pequeno
+        de 1s o website vai mostrar uma mensagem de erro, isto poderia ser resolvido adicionando ao id um random mas depois quando fosse mostrar as tarefas teria de estar dar um parse para retirar esse random
+        , para o objetivo do tpc não achei que compenssaria porque traria complexidade que só resolveria um caso muito raro</p>
+        
+    </abstract>
+    <deliverables>
+        
+        <link url="server.js">server.js</link>
+        <link url="sgenerate.js">sgenerate.js</link>
+        <link url="static.js">static.js</link>
+        <link url="package-json">package-json</link>
+        <link url="db.json">db.json</link>
+       
+        <link url="pr.dtd">pr.dtd</link>
+
+    </deliverables>
+</pr>

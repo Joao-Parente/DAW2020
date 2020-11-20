@@ -1,0 +1,27 @@
+{
+  "todo": [
+    {
+      "id": "2020-11-20T11:53:54",
+      "begindate_hour": "2020-11-20",
+      "begindate_time": "00:00",
+      "deadline_hour": "2020-11-21",
+      "deadline_time": "23:59",
+      "who": "Joaquim Pedro",
+      "descrip": "Ir comprar leite",
+      "type": "compras",
+      "donein": "2020-11-20T11:53:54"
+    },
+    {
+      "id": "2020-11-20T11:55:35",
+      "begindate_hour": "2020-11-20",
+      "begindate_time": "00:00",
+      "deadline_hour": "2020-11-20",
+      "deadline_time": "23:59",
+      "who": "Joaquim Pedro",
+      "descrip": "Descansar",
+      "type": "outro",
+      "donein": "2020-11-20T11:55:35"
+    }
+  ],
+  "done": []
+}

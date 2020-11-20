@@ -1,0 +1,25 @@
+{
+  "name": "t6",
+  "version": "1.0.0",
+  "description": "DAW2020_T6 - SPA, toDo List",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devstart": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "jpedro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "nodemon": "^2.0.6"
+  }
+}
