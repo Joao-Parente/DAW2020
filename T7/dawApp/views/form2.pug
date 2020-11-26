@@ -1,0 +1,14 @@
+extends layout
+
+block content
+      
+      
+    form.w3-container( action="/editar/"+id method="POST")
+
+        input.w3-input(type="hidden" name="numero" value=id )
+        label nome
+        input.w3-input(type="text" name="nome")
+        label git
+        input.w3-input(type="text" name="git")
+        input.w3-btn( type="submit" value="Registar")
+         

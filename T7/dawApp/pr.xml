@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW::T7</key>
+        <title>Relatório sobre o T6</title> 
+        <bdate>25/11/2020</bdate>
+        <edate>2/12/2020</edate>
+        <supervisor>jcr</supervisor>
+    </meta>
+    <team>
+        <member id="a84197">
+            <name>Joao Pedro Araújo Parente</name>
+            <email>a84917@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O objetivo deste tpc era aprimorar a aplicação criada na aula. Acrescentar a capapacide de criar novos alunos, editar existentes e eliminar alunos</p>
+	<p> Esta aplicação foi desenvolvida numa framework de express, onde o servidor é responsável por responder a pedidos GETS/POSTS feitos pelos clientes e responder devidamente acedendo a base de dados de mongo </p> 
+ 
+
+
+
+
+    </abstract>
+    <deliverables>
+        
+        <link url="dawApp">dawApp</link>
+        <link url="pr.xml">pr.xml</link>
+
+
+    </deliverables>
+</pr>

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+      
+      
+    form.w3-container( action="/students" method="POST")
+        label numero
+        input.w3-input(type="text" name="numero")
+        label nome
+        input.w3-input(type="text" name="nome")
+        label git
+        input.w3-input(type="text" name="git")
+        input.w3-btn( type="submit" value="Registar")
+         

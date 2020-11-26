@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student !{regist.numero} (DAW2020)
+
+
+        .w3-container
+          table.w3-table-all
+            dl
+                dt Number: 
+                dd= regist.numero
+                dt Name: 
+                dd= regist.nome
+                dt Git:
+                dd
+                  a(href=regist.git) !{regist.git}
+                   
+                       
+
+        - var i=0;
+
+
+        while i<8 && i<regist.tpc.length
+            p tpc!{i+1}:    !{regist.tpc[i]}
+
+            - i++
+ 
+                       
+
+
+
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov, jcr
+        a(href='/students') Voltar
+        a(href='/students/'+regist.numero+'/editar') Editar
+  
