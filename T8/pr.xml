@@ -15,7 +15,7 @@
         </member>
     </team>
     <abstract>
-        <p>O objetivo deste tpc era aprimorar a aplicação criada na aula.</p>
+        <p>O objetivo deste tpc era aprimorar a aplicação criada na aula, um gestor de ficheiros</p>
 
         <p> Acrescentar apenas a capacidade de dar upload a mais que um ficheiro, para tal no ficheiro html-templates.js dei um id à div
         onde queria que ficassem os elementos input para upload do ficheiro e um footer para que quando carregassem nele chama-se uma função chamada addUpload que se situa no imagens.js que usando jquery 
