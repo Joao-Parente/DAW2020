@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW::T8</key>
+        <title>Relatório sobre o T8</title>
+        <bdate>2/12/2020</bdate>
+        <edate>9/12/2020</edate>
+        <supervisor>jcr</supervisor>
+    </meta>
+    <team>
+        <member id="a84197">
+            <name>Joao Pedro Araújo Parente</name>
+            <email>a84917@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O objetivo deste tpc era aprimorar a aplicação criada na aula.</p>
+
+        <p> Acrescentar apenas a capacidade de dar upload a mais que um ficheiro, para tal no ficheiro html-templates.js dei um id à div
+        onde queria que ficassem os elementos input para upload do ficheiro e um footer para que quando carregassem nele chama-se uma função chamada addUpload que se situa no imagens.js que usando jquery 
+        desse append na div referida anteriormente de mais um input para upload de ficheiro.
+        Além disso tive de alterar no server.js porque agora o post do form já não tinha no body só um ficheiro que estava na varável req.body.file mas sim um array de ficheiros que está na variável req.body.files e
+        apliquei o processo que já estava feito a todas as posições do array.
+        </p>
+
+
+
+    </abstract>
+    <deliverables>
+
+        <link url="server.js">server.js</link>
+        <link url="imagens.js">imagens.js</link>
+        <link url="html-templates">html-templates</link>
+        <link url="pr.xml">pr.xml</link>
+
+
+    </deliverables>
+</pr>
