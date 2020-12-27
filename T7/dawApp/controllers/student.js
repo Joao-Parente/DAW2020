@@ -21,6 +21,14 @@ module.exports.insert = student => {
     return newStudent.save()
 }
 
+
+module.exports.edit = student => {
+    return Student 
+    .updateOne({numero: student.numero}, {$set: {nome: student.nome, git: student.git, tpc: student.tpc}})
+    .exec()
+} 
+
+
 module.exports.remove = id => {
     
     return Student.deleteOne({numero: id})
